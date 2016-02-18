@@ -11,8 +11,8 @@ fi
 print_help() {
 	echo "Usage: $0 <COMMAND> [ARGS]"
 	echo ""
-	echo "<COMMAND>: command defined in ${DOFILE}"
-	echo "[ARGS]   : arguments for <COMMAND>"
+	echo "COMMAND - command (function) defined in ${DOFILE}"
+	echo "ARGS    - arguments for command"
 	echo ""
 	echo "Available commands:"
 	echo ""

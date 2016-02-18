@@ -11,7 +11,13 @@ git_add_all() {
 }
 
 git_commit() {
-	git commit
+	git commit $@
+}
+
+git_add_and_commit() {
+	git_status
+	git_add_all
+	git_commit $@
 }
 
 git_push_master() {
