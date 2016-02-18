@@ -8,7 +8,7 @@ if [ -f ${DOFILE} ]; then
 	source ${DOFILE}
 fi
 
-print_help() {
+do_print_help() {
 	echo "Usage: $0 <COMMAND> [ARGS]"
 	echo ""
 	echo "COMMAND - command (function) defined in ${DOFILE}"
@@ -20,12 +20,12 @@ print_help() {
 	echo ""
 }
 
-view_command() {
+do_view_command() {
 	declare -f $1
 }
 
 if [ $# -lt 1 ]; then
-    print_help
+    do_print_help
     exit -1
 fi
 
