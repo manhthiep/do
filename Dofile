@@ -1,3 +1,19 @@
 test() {
 	echo "Hello World!"
 }
+
+git_status() {
+	git status
+}
+
+git_add_all() {
+	git add -A
+}
+
+git_commit() {
+	git commit
+}
+
+git_push_master() {
+	git push origin master
+}
